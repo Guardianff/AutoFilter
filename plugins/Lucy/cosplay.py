@@ -13,7 +13,7 @@ LUCY = [
 @Client.on_message(filters.command("cosplay"))
 async def cosplay(_,msg):
     img = requests.get("https://waifu-api.vercel.app").json()
-    await msg.reply_photo(img, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ʟᴜᴄʏ", reply_markup=InlineKeyboardMarkup(LUCY),)
+    await msg.reply_photo(img, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ᴢɪᴀ", reply_markup=InlineKeyboardMarkup(ZIA),)
 
 
 
@@ -29,4 +29,4 @@ async def ncosplay(_,msg):
     else:
        ncosplay = requests.get("https://waifu-api.vercel.app/items/1").json()
 
-       await msg.reply_photo(ncosplay, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ʟᴜᴄʏ", reply_markup=InlineKeyboardMarkup(LUCY),)
+       await msg.reply_photo(ncosplay, caption=f"ᴄᴏsᴘʟᴀʏ ʙʏ ᴢɪᴀ", reply_markup=InlineKeyboardMarkup(ZIA),)
